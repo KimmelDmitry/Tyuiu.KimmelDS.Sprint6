@@ -18,7 +18,7 @@ namespace Tyuiu.KimmelDS.Sprint6.Task3.V20.Lib
 
             for (int i = 0; i < rows; i++)
             {
-                matrix[i, 4] = FiveColumn[i];
+                matrix[i, 4] = 0;
             }
 
             return matrix;
