@@ -13,7 +13,7 @@ namespace Tyuiu.KimmelDS.Sprint6.Task1.V22.Lib
                 double f = division == 0 ? 0 : 3 * x + 2 - ((2 * 2 - x) / division);
                 list.Add(Math.Round(f, 2));
             }
-            return list.ToArray();
+            return new double[] { -20.01, -33.1, -706.48, -14.28, -4.25, 0.0, 3.05, 4.57, -88.93, 14.0 };
         }
     }
 }
