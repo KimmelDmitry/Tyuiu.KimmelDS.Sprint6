@@ -16,6 +16,13 @@ namespace Tyuiu.KimmelDS.Sprint6.Task3.V20.Lib
                 FiveColumn[i] = matrix[i, 4];
             }
 
+
+
+
+
+
+
+
             Array.Sort(FiveColumn);
 
             for (int i = 0; i < rows; i++)
