@@ -6,7 +6,8 @@ namespace Tyuiu.KimmelDS.Sprint6.Task4.V29.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue) 
             => Enumerable.Range(startValue, stopValue)
-                .Select(x => Math.Cos(x) - 2 * x == 0 ? 0 : Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - 6, 2))
-                .ToArray();
+                .Select(x => Math.Cos(x) - 2 * x == 0 ? 0 :
+                    Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - 6, 2))
+                    .ToArray();
     }
 }
