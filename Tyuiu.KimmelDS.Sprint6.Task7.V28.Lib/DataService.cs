@@ -6,14 +6,14 @@ namespace Tyuiu.KimmelDS.Sprint6.Task7.V28.Lib
     {
         public int[,] GetMatrix(string path)
         {
-            int Colindx = 7;
+            int RowIndex = 6; // Индекс седьмой строки
             int[,] matrix = ReadCsvToIntArray(path);
-           
+
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (i == Colindx && matrix[i, j] != 13)
+                    if (i == RowIndex && matrix[i, j] != 13)
                     {
                         matrix[i, j] = 0;
                     }
@@ -21,7 +21,6 @@ namespace Tyuiu.KimmelDS.Sprint6.Task7.V28.Lib
             }
             return matrix;
         }
-
 
         public int[,] ReadCsvToIntArray(string filePath)
         {
@@ -34,7 +33,7 @@ namespace Tyuiu.KimmelDS.Sprint6.Task7.V28.Lib
 
             for (int i = 0; i < rows; i++)
             {
-                int[] values = lines[i].Split(";").Select(int.Parse).ToArray();
+                int[] values = lines[i].Split(';').Select(int.Parse).ToArray();
                 for (int j = 0; j < cols; j++)
                 {
                     result[i, j] = values[j];
